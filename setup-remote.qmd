@@ -1,0 +1,7 @@
+# Setup for remote repos
+
+Creating a GitHub account
+
+Workflows for connecting local git repos to remote GitHub repos
+
+The `.gitignore` file

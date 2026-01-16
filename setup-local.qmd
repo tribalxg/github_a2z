@@ -1,0 +1,13 @@
+# Setup for local repos
+
+Install git
+
+Create git repo
+
+Configure git
+
+
+
+
+
+<!-- See @knuth84 for additional discussion of literate programming. -->

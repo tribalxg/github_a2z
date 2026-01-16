@@ -1,3 +1,8 @@
+# used to create this book: 
+# https://www.youtube.com/watch?v=Hbixs7ACvvw
+# with R4DS2e source code as a model:
+# https://github.com/hadley/r4ds/tree/main
+
 project:
   type: book
   output-dir: docs
@@ -8,9 +13,40 @@ book:
   date: "1/16/2026"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+
+    - why-git.qmd
+
+    - part: intro-local.qmd
+      chapters:
+        - setup-local.qmd
+        - basics-local.qmd
+
+    - part: intermediate-local.qmd
+      chapters:
+        - easy-oops.qmd
+        - git-diff.qmd
+        - branches.qmd
+        - merging.qmd
+        - rebase.qmd
+        - cherry-pick.qmd
+        - bisect.qmd
+        - stash.qmd
+        - reflog.qmd
+
+    - part: intro-remote.qmd
+      chapters:
+        - setup-remote.qmd
+        - basics-remote.qmd
+
+    - part: collaboration.qmd
+      chapters:
+        - pull-requests.qmd
+        - forks.qmd
+        - issues.qmd
+        # - more.qmd
+        # - project-management.qmd
+
+    - next-steps.qmd
 
 bibliography: references.bib
 

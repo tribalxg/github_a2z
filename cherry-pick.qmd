@@ -1,0 +1,3 @@
+# Cherry-picking
+
+Scenarios and how to use `git cherry-pick`

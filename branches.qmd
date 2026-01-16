@@ -1,0 +1,9 @@
+# Branches
+
+Why? Experiment with a new change you’re not sure you want to keep. Work on a piece of the project separately and add it to the main code once it’s ready. Develop multiple parts of the code in parallel while tracking those developments separately (can make it easier to have a clear commit history later). (Also has additional benefits in a collaborative setting; we’ll get to this later.)
+
+Make a new branch (git branch <new branch name>)
+
+See which branches you have and which one you’re on (git branch)
+
+Move to another branch (git checkout)

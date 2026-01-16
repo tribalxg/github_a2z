@@ -1,0 +1,18 @@
+# Intermediate skills with local repos
+
+Now that we know just enough to be dangerous, let's learn more about troubleshooting and making more complex changes with git and GitHub.
+
+- Correcting typos in commit messages
+- Undoing a commit
+- Recover lost commits
+- Reverting back to a previous version (and throw away the changes made since then)
+- What to do if you pull and find there are conflicts it can’t resolve
+- Compare two commits of one or more files
+- Experiment with a new change you’re not sure you want to keep
+- Work on a piece of the project separately and add it to the main code once it’s ready
+- Develop multiple parts of the code in parallel while tracking those developments separately (can make it easier to have a clear commit history later)
+- Manage your commit history at different phases of your project to improve documentation and reproducibility
+- What if you “fix” a bug and commit the changes with the commit message that you fixed that bug, then later you discover you haven’t fully fixed it?
+- Figure out at what commit a bug first happened so you can fix it
+
+

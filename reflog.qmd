@@ -1,0 +1,3 @@
+# Reference log
+
+Use `git reflog` to recover lost commits, undo a rebase and more

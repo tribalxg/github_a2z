@@ -1,0 +1,11 @@
+# Easy "oops" to fix
+
+Let's start with the easiest skills and the easiest problems to fix.
+
+- git checkout
+- git reset (soft vs hard)
+- git commit — amend
+- Correct typos in commit messages
+- Undo a commit
+- Revert back to a previous version (and throw away the changes made since then)
+- What do you do if you pull and find there are conflicts it can’t resolve?

@@ -1,0 +1,6 @@
+# Comparing two commits
+
+git diff
+
+How can you see the two versions of the file side by side and run parts of them interactively to explore them?
+

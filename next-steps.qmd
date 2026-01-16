@@ -1,0 +1,3 @@
+# Next steps {.unnumbered}
+
+GitOps, GitHub Actions, and more

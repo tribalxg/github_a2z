@@ -4,9 +4,277 @@
     "href": "index.html",
     "title": "GitHub from A to Z",
     "section": "",
-    "text": "Preface\nThis is a book to take you from the basics of GitHub through the more complicated bits that arise as you try to use GitHub for daily work.",
+    "text": "Introduction\nThis is a book to take you from the basics of GitHub through the more complicated bits that arise as you try to use GitHub for daily work.",
     "crumbs": [
-      "Preface"
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "why-git.html",
+    "href": "why-git.html",
+    "title": "Why Git?",
+    "section": "",
+    "text": "What is version control software?\nMake analogies to editing papers, go through diagrams as we did at the in-person PNWTCG meeting\nIf you and your collaborators edit the same code at the same time, you’re likely to interfere with each other’s work. You’re also likely to introduce errors in the other person’s code or vice versa, or make conflicting edits, and it can be hard to trace what happened or how to fix it. Hard enough with two collaborators, what if you have 10? 100?\nYou made a mistake and you want to undo it, but you don’t want to undo all the changes you made since then.\nYou accidentally deleted a file or a chunk of code at some point in your work and you want to recover it.\nGitHub not only provides version control, but makes your work visible and available to others, allows others to learn about and contribute to your work (with your consent)",
+    "crumbs": [
+      "Why Git?"
+    ]
+  },
+  {
+    "objectID": "intro-local.html",
+    "href": "intro-local.html",
+    "title": "Introduction to local repositories",
+    "section": "",
+    "text": "Let’s start by working with repositories that live entirely on your own computer. We’ll call a repository on your computer a local repository. Later we’ll talk about how to connect local repositories to remote ones so that you can back up your wokr, share your work, and collaborate.",
+    "crumbs": [
+      "Introduction to local repositories"
+    ]
+  },
+  {
+    "objectID": "setup-local.html",
+    "href": "setup-local.html",
+    "title": "1  Setup for local repos",
+    "section": "",
+    "text": "Install git\nCreate git repo\nConfigure git",
+    "crumbs": [
+      "Introduction to local repositories",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup for local repos</span>"
+    ]
+  },
+  {
+    "objectID": "basics-local.html",
+    "href": "basics-local.html",
+    "title": "2  Basics of local repos",
+    "section": "",
+    "text": "Status, add, commit, log\nUntracked versus tracked files\nWhat staging changes does\nWhat commits do and some general tips about when/how to make them (we’ll keep building on this)\n\nIf a commit involves lots of changes and then you discover one is incorrect or you want to undo one of them, you have to discard the whole commit (or see the more advanced tricks later)\nNote: git rebase can help you hone this workflow! See later notes",
+    "crumbs": [
+      "Introduction to local repositories",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basics of local repos</span>"
+    ]
+  },
+  {
+    "objectID": "intermediate-local.html",
+    "href": "intermediate-local.html",
+    "title": "Intermediate skills with local repos",
+    "section": "",
+    "text": "Now that we know just enough to be dangerous, let’s learn more about troubleshooting and making more complex changes with git and GitHub.\n\nCorrecting typos in commit messages\nUndoing a commit\nRecover lost commits\nReverting back to a previous version (and throw away the changes made since then)\nWhat to do if you pull and find there are conflicts it can’t resolve\nCompare two commits of one or more files\nExperiment with a new change you’re not sure you want to keep\nWork on a piece of the project separately and add it to the main code once it’s ready\nDevelop multiple parts of the code in parallel while tracking those developments separately (can make it easier to have a clear commit history later)\nManage your commit history at different phases of your project to improve documentation and reproducibility\nWhat if you “fix” a bug and commit the changes with the commit message that you fixed that bug, then later you discover you haven’t fully fixed it?\nFigure out at what commit a bug first happened so you can fix it",
+    "crumbs": [
+      "Intermediate skills with local repos"
+    ]
+  },
+  {
+    "objectID": "easy-oops.html",
+    "href": "easy-oops.html",
+    "title": "3  Easy “oops” to fix",
+    "section": "",
+    "text": "Let’s start with the easiest skills and the easiest problems to fix.\n\ngit checkout\ngit reset (soft vs hard)\ngit commit — amend\nCorrect typos in commit messages\nUndo a commit\nRevert back to a previous version (and throw away the changes made since then)\nWhat do you do if you pull and find there are conflicts it can’t resolve?",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Easy \"oops\" to fix</span>"
+    ]
+  },
+  {
+    "objectID": "git-diff.html",
+    "href": "git-diff.html",
+    "title": "4  Comparing two commits",
+    "section": "",
+    "text": "git diff\nHow can you see the two versions of the file side by side and run parts of them interactively to explore them?",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Comparing two commits</span>"
+    ]
+  },
+  {
+    "objectID": "branches.html",
+    "href": "branches.html",
+    "title": "5  Branches",
+    "section": "",
+    "text": "Why? Experiment with a new change you’re not sure you want to keep. Work on a piece of the project separately and add it to the main code once it’s ready. Develop multiple parts of the code in parallel while tracking those developments separately (can make it easier to have a clear commit history later). (Also has additional benefits in a collaborative setting; we’ll get to this later.)\nMake a new branch (git branch )\nSee which branches you have and which one you’re on (git branch)\nMove to another branch (git checkout)",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Branches</span>"
+    ]
+  },
+  {
+    "objectID": "merging.html",
+    "href": "merging.html",
+    "title": "6  Merging",
+    "section": "",
+    "text": "Merging when there are no conflicts (easiest)\nAvoid merge conflicts by waiting a long time before merging a branch to your main code\nIf you do need to keep a branch for a long time, use merge from main or upmerge to make sure you keep them updated to minimize conflicts when you are ready to merge.\nHow do you resolve merge conflicts when you want to accept all the changes in the new branch? In the old branch? Some in each? What if for some conflicts you don’t want to accept either version but do something else (a third version)?\nMore on addressing merge conflicts when we get to the collaborative setting",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Merging</span>"
+    ]
+  },
+  {
+    "objectID": "rebase.html",
+    "href": "rebase.html",
+    "title": "7  Rebase",
+    "section": "",
+    "text": "When and how to manage your commit history with rebase\nReword specific commit messages\nDrop unwanted changes or unnecessary commits\nReorder commits for logical flow\nA nice four-step iterative process? Let’s test this out! (1) make a new branch to work on some feature of your code, (2) make frequent commits as you develop the feature for that particular branch, (3) use rebase to combine trivial commits into a single more meaningful easier-to-interpret commit and/or reorganize the order of the commits into a logical flow, (4) merge the branch to your main branch. Now when you look back at your history, it’s easier to tell what you did at each step and why.\nIf you make mistakes in this process, use git reflog (reference log) to undo them!\nWhat if you “fix” a bug and commit the changes with the commit message that you fixed that bug, then later you discover you haven’t fully fixed it?\nYou are making a commit to fix a particular issue in the code.\nTo what extent do you document that issue in the comment message, or where do you log it for future use (here’s the issue I noticed, what I tried in order to troubleshoot it, what ultimately worked, and what I learned in the process)? I often find myself needing to go back and remind myself of those details, and I don’t yet have a good system for it.",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Rebase</span>"
+    ]
+  },
+  {
+    "objectID": "cherry-pick.html",
+    "href": "cherry-pick.html",
+    "title": "8  Cherry-picking",
+    "section": "",
+    "text": "Scenarios and how to use git cherry-pick",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cherry-picking</span>"
+    ]
+  },
+  {
+    "objectID": "bisect.html",
+    "href": "bisect.html",
+    "title": "9  Bisect",
+    "section": "",
+    "text": "Pinpoint bugs with git bisect\nOops, your code worked two weeks ago but now you discover a bug in the code and you’re not sure when it first occurred or what caused it! You can use git bisect to more efficiently pinpoint the commit where the bug first happened.\nAbout the binary search algorithm",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bisect</span>"
+    ]
+  },
+  {
+    "objectID": "stash.html",
+    "href": "stash.html",
+    "title": "10  Stashing",
+    "section": "",
+    "text": "Use git stash to stash uncommitted work, go and fix/work on something in another branch or in a past commit, then come back and restore your work!",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Stashing</span>"
+    ]
+  },
+  {
+    "objectID": "reflog.html",
+    "href": "reflog.html",
+    "title": "11  Reference log",
+    "section": "",
+    "text": "Use git reflog to recover lost commits, undo a rebase and more",
+    "crumbs": [
+      "Intermediate skills with local repos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Reference log</span>"
+    ]
+  },
+  {
+    "objectID": "intro-dual.html",
+    "href": "intro-dual.html",
+    "title": "Introduction to dual repos (local and remote)",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Introduction to dual repos (local and remote)"
+    ]
+  },
+  {
+    "objectID": "setup-dual.html",
+    "href": "setup-dual.html",
+    "title": "13  Setup for dual repos",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Introduction to dual repos (local and remote)",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Setup for dual repos</span>"
+    ]
+  },
+  {
+    "objectID": "basics-dual.html",
+    "href": "basics-dual.html",
+    "title": "14  Basics of dual repos",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Introduction to dual repos (local and remote)",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Basics of dual repos</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html",
+    "href": "collaboration.html",
+    "title": "Collaboration and project management",
+    "section": "",
+    "text": "What if you want to work on a project with other people, whether it’s one collaborator or a whole team?\nSummary of features/skills",
+    "crumbs": [
+      "Collaboration and project management"
+    ]
+  },
+  {
+    "objectID": "pull-requests.html",
+    "href": "pull-requests.html",
+    "title": "14  Pull requests",
+    "section": "",
+    "text": "When to make a pull request\nWhat is a pull request and how do you do it",
+    "crumbs": [
+      "Collaboration and project management",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Pull requests</span>"
+    ]
+  },
+  {
+    "objectID": "forks.html",
+    "href": "forks.html",
+    "title": "15  Forks",
+    "section": "",
+    "text": "When and how to use forks\nWhen to use a fork versus a branch\nWhen to clone versus fork",
+    "crumbs": [
+      "Collaboration and project management",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Forks</span>"
+    ]
+  },
+  {
+    "objectID": "issues.html",
+    "href": "issues.html",
+    "title": "16  Issues",
+    "section": "",
+    "text": "What issues are and how to use them",
+    "crumbs": [
+      "Collaboration and project management",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Issues</span>"
+    ]
+  },
+  {
+    "objectID": "next-steps.html",
+    "href": "next-steps.html",
+    "title": "Next steps",
+    "section": "",
+    "text": "GitOps, GitHub Actions, and more",
+    "crumbs": [
+      "Next steps"
+    ]
+  },
+  {
+    "objectID": "intro-remote.html",
+    "href": "intro-remote.html",
+    "title": "Introduction to remote repos",
+    "section": "",
+    "text": "This is a good approach for backing up your work, sharing your work, and collaborating.",
+    "crumbs": [
+      "Introduction to remote repos"
+    ]
+  },
+  {
+    "objectID": "setup-remote.html",
+    "href": "setup-remote.html",
+    "title": "12  Setup for remote repos",
+    "section": "",
+    "text": "Creating a GitHub account\nWorkflows for connecting local git repos to remote GitHub repos\nThe .gitignore file",
+    "crumbs": [
+      "Introduction to remote repos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Setup for remote repos</span>"
+    ]
+  },
+  {
+    "objectID": "basics-remote.html",
+    "href": "basics-remote.html",
+    "title": "13  Basics of remote repos",
+    "section": "",
+    "text": "Clone, fetch, pull, push\nWhen to use fetch versus pull",
+    "crumbs": [
+      "Introduction to remote repos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Basics of remote repos</span>"
     ]
   }
 ]

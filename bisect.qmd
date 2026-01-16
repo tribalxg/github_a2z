@@ -1,0 +1,7 @@
+# Bisect
+
+Pinpoint bugs with git bisect
+
+Oops, your code worked two weeks ago but now you discover a bug in the code and you’re not sure when it first occurred or what caused it!  You can use git bisect to more efficiently pinpoint the commit where the bug first happened.
+
+About the binary search algorithm

@@ -1,0 +1,19 @@
+# Rebase
+
+When and how to manage your commit history with rebase
+
+Reword specific commit messages
+
+Drop unwanted changes or unnecessary commits
+
+Reorder commits for logical flow
+
+A nice four-step iterative process?  Let’s test this out! (1) make a new branch to work on some feature of your code, (2) make frequent commits as you develop the feature for that particular branch, (3) use rebase to combine trivial commits into a single more meaningful easier-to-interpret commit and/or reorganize the order of the commits into a logical flow, (4) merge the branch to your main branch.  Now when you look back at your history, it’s easier to tell what you did at each step and why.
+
+If you make mistakes in this process, use git reflog (reference log) to undo them!
+
+What if you “fix” a bug and commit the changes with the commit message that you fixed that bug, then later you discover you haven’t fully fixed it?
+
+You are making a commit to fix a particular issue in the code.
+
+To what extent do you document that issue in the comment message, or where do you log it for future use (here’s the issue I noticed, what I tried in order to troubleshoot it, what ultimately worked, and what I learned in the process)?  I often find myself needing to go back and remind myself of those details, and I don’t yet have a good system for it.

@@ -1,0 +1,12 @@
+# Basics of local repos
+
+Status, add, commit, log
+
+Untracked versus tracked files
+
+What staging changes does
+
+What commits do and some general tips about when/how to make them (we’ll keep building on this) 
+
+- If a commit involves lots of changes and then you discover one is incorrect or you want to undo one of them, you have to discard the whole commit (or see the more advanced tricks later)
+- Note: `git rebase` can help you hone this workflow!  See later notes

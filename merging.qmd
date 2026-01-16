@@ -1,0 +1,11 @@
+# Merging
+
+Merging when there are no conflicts (easiest)
+
+Avoid merge conflicts by waiting a long time before merging a branch to your main code
+
+If you do need to keep a branch for a long time, use merge from main or upmerge to make sure you keep them updated to minimize conflicts when you are ready to merge.
+
+How do you resolve merge conflicts when you want to accept all the changes in the new branch? In the old branch? Some in each? What if for some conflicts you don’t want to accept either version but do something else (a third version)?
+
+More on addressing merge conflicts when we get to the collaborative setting

@@ -1,0 +1,5 @@
+# Introduction to local repositories
+
+Let's start by working with repositories that live entirely on your own computer. We'll call a repository on your computer a **local repository**. Later we'll talk about how to connect local repositories to remote ones so that you can back up your wokr, share your work, and collaborate.
+
+<!-- See @knuth84 for additional discussion of literate programming. -->

@@ -1,0 +1,3 @@
+# Stashing
+
+Use git stash to stash uncommitted work, go and fix/work on something in another branch or in a past commit, then come back and restore your work!

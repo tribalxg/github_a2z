@@ -1,0 +1,5 @@
+# Basics of remote repos
+
+Clone, fetch, pull, push
+
+When to use fetch versus pull

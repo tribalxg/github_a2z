@@ -1,0 +1,16 @@
+# Why Git? {.unnumbered}
+
+What is version control software?
+
+Make analogies to editing papers, go through diagrams as we did at the in-person PNWTCG meeting
+
+If you and your collaborators edit the same code at the same time, you’re likely to interfere with each other’s work.  You’re also likely to introduce errors in the other person’s code or vice versa, or make conflicting edits, and it can be hard to trace what happened or how to fix it. Hard enough with two collaborators, what if you have 10? 100?
+
+You made a mistake and you want to undo it, but you don’t want to undo all the changes you made since then.
+
+You accidentally deleted a file or a chunk of code at some point in your work and you want to recover it.
+
+GitHub not only provides version control, but makes your work visible and available to others, allows others to learn about and contribute to your work (with your consent)
+
+
+<!-- See @knuth84 for additional discussion of literate programming. -->
