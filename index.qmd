@@ -1,3 +1,5 @@
 # Introduction {.unnumbered}
 
 This is a book to take you from the basics of GitHub through the more complicated bits that arise as you try to use GitHub for daily work.
+
+This book is in early development.
