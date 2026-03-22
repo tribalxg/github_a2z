@@ -276,5 +276,25 @@
       "Introduction to remote repos",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Basics of remote repos</span>"
     ]
+  },
+  {
+    "objectID": "index.html#great-intro-git-and-github-resources",
+    "href": "index.html#great-intro-git-and-github-resources",
+    "title": "GitHub from A to Z",
+    "section": "Great intro git and GitHub resources:",
+    "text": "Great intro git and GitHub resources:\nIntegrating RStudio with a new or existing GitHub repository (18-min video by Riffomonas Project)\nGit for R Users (14-min video by Equitable Equations)\nHappy Git with R (online text by Jenny Bryan)\nConnecting an existing RStudio project to git and GitHub (10-min video by Riffomonas Project)\n\nTools &gt; Version Control &gt; Project Setup, set Version control system to Git, and you’ll get a Git tab (this initializes a local git repo for your R project\nCreate a GitHub account if you haven’t already\nCreate a new repo on GitHub: set Repository name, add a Description, skip the checkboxes since your local repo will already have a .gitignore file\nFollow the GitHub instructions: click the Copy icon, and paste it into your R Studio terminal (not console)\nRefresh the page for your GitHub repo and you should see all the files",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#additional-resources-if-you-want-to-go-deeper-into-git-and-github",
+    "href": "index.html#additional-resources-if-you-want-to-go-deeper-into-git-and-github",
+    "title": "GitHub from A to Z",
+    "section": "Additional resources if you want to go deeper into git and GitHub:",
+    "text": "Additional resources if you want to go deeper into git and GitHub:\nGit for R users: branches and merges (12-min video by Equitable Equations)\n\nUse present tense with commit messages\nBranches are great for experimenting with a new feature or a change you think you might want to make\nInstead of making a copy of a file so you can safely tinker with it\ngit merge sandbox —message “merge sandbox to main”\nCheck out the commit history and look at the graph\nIf you’re done with the branch, delete it via git branch -d sandbox\nResolving merge conflicts is something you might need in the future if you collaborate or if you work on multiple branches of your work simultaneously\n\ngit/GitHub tutorial with command line only (40-min video by Riffomonas Project)\nUsing GitHub Pages (7-min video by The Common Coder, uses VS Code)\n\nGitHub pages are static sites (no user input, but you can still have minimal interactivity). you get one main site per account, https://github-username.github.io, and unlimited project sites https://github-username.github.io/project-name\nUnder your repo, go to settings &gt; pages\nSource: choose either deploy from a branch or github actions\nWhat actions looks like (yellow turns to either green checkmark or red x)\nGo back to settings &gt; page and it says “your site is live at …”\n\nUsing GitHub pages to host a web page made with R Markdown (24-min video by Riffomonas Project, in VS Code)\n\nSettings &gt; Pages &gt; deploy from a branch, main, root\nHe makes an index.Rmd file with output html_document and github_repo \nThis video uses CSS and Snakemake as well as command-line git\nThis video shows some nice tips on using CSS and Rmarkdown variables to improve your page\nHe also made a super cool followup video to show how you can use Snakemake to have your webpage get updated every day!",
+    "crumbs": [
+      "Introduction"
+    ]
   }
 ]

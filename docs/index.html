@@ -275,7 +275,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#great-intro-git-and-github-resources" id="toc-great-intro-git-and-github-resources" class="nav-link" data-scroll-target="#great-intro-git-and-github-resources">Great intro git and GitHub resources:</a></li>
+  <li><a href="#additional-resources-if-you-want-to-go-deeper-into-git-and-github" id="toc-additional-resources-if-you-want-to-go-deeper-into-git-and-github" class="nav-link" data-scroll-target="#additional-resources-if-you-want-to-go-deeper-into-git-and-github">Additional resources if you want to go deeper into git and GitHub:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -317,8 +321,52 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="unnumbered">Introduction</h1>
 <p>This is a book to take you from the basics of GitHub through the more complicated bits that arise as you try to use GitHub for daily work.</p>
 <p>This book is in early development.</p>
+<section id="great-intro-git-and-github-resources" class="level2">
+<h2 class="anchored" data-anchor-id="great-intro-git-and-github-resources">Great intro git and GitHub resources:</h2>
+<p><a href="https://www.youtube.com/watch?v=sxErFMF7BJY">Integrating RStudio with a new or existing GitHub repository</a> (18-min video by Riffomonas Project)</p>
+<p><a href="https://www.youtube.com/watch?v=njMEXGfUQG8">Git for R Users</a> (14-min video by Equitable Equations)</p>
+<p><a href="https://happygitwithr.com/">Happy Git with R</a> (online text by Jenny Bryan)</p>
+<p><a href="https://www.youtube.com/watch?v=bUoN85QvC10">Connecting an existing RStudio project to git and GitHub</a> (10-min video by Riffomonas Project)</p>
+<ul>
+<li>Tools &gt; Version Control &gt; Project Setup, set Version control system to Git, and you’ll get a Git tab (this initializes a local git repo for your R project</li>
+<li>Create a GitHub account if you haven’t already</li>
+<li>Create a new repo on GitHub: set Repository name, add a Description, skip the checkboxes since your local repo will already have a .gitignore file</li>
+<li>Follow the GitHub instructions: click the Copy icon, and paste it into your R Studio terminal (not console)</li>
+<li>Refresh the page for your GitHub repo and you should see all the files</li>
+</ul>
+</section>
+<section id="additional-resources-if-you-want-to-go-deeper-into-git-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources-if-you-want-to-go-deeper-into-git-and-github">Additional resources if you want to go deeper into git and GitHub:</h2>
+<p><a href="https://www.youtube.com/watch?v=kN9UZLgxCso">Git for R users: branches and merges</a> (12-min video by Equitable Equations)</p>
+<ul>
+<li>Use present tense with commit messages</li>
+<li>Branches are great for experimenting with a new feature or a change you think you might want to make</li>
+<li>Instead of making a copy of a file so you can safely tinker with it</li>
+<li>git merge sandbox —message “merge sandbox to main”</li>
+<li>Check out the commit history and look at the graph</li>
+<li>If you’re done with the branch, delete it via git branch -d sandbox</li>
+<li>Resolving merge conflicts is something you might need in the future if you collaborate or if you work on multiple branches of your work simultaneously</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=DnwEaa5QtpI">git/GitHub tutorial with command line only</a> (40-min video by Riffomonas Project)</p>
+<p><a href="https://www.youtube.com/watch?v=5XhxR9Vs6zc">Using GitHub Pages</a> (7-min video by The Common Coder, uses VS Code)</p>
+<ul>
+<li>GitHub pages are static sites (no user input, but you can still have minimal interactivity). you get one main site per account, https://github-username.github.io, and unlimited project sites https://github-username.github.io/project-name</li>
+<li>Under your repo, go to settings &gt; pages</li>
+<li>Source: choose either deploy from a branch or github actions</li>
+<li>What actions looks like (yellow turns to either green checkmark or red x)</li>
+<li>Go back to settings &gt; page and it says “your site is live at …”</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=ozta7H7WK58&amp;t=51s">Using GitHub pages to host a web page made with R Markdown</a> (24-min video by Riffomonas Project, in VS Code)</p>
+<ul>
+<li>Settings &gt; Pages &gt; deploy from a branch, main, root</li>
+<li>He makes an index.Rmd file with output html_document and github_repo <url></url></li>
+<li>This video uses CSS and Snakemake as well as command-line git</li>
+<li>This video shows some nice tips on using CSS and Rmarkdown variables to improve your page</li>
+<li>He also made a <a href="https://www.youtube.com/watch?v=t1MGEVeTgQM">super cool followup video</a> to show how you can use Snakemake to have your webpage get updated every day!</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
